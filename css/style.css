@@ -805,14 +805,19 @@ body{
     }
 
     .hero-content h1{
-        font-size:34px;
-        line-height:1.2;
-        margin-bottom:12px;
+        font-size:18px;
+        line-height:1.4;
+        margin-bottom:18px;
     }
 
     .hero-content h2{
-        font-size:44px;
-        line-height:1.1;
+     font-size:26px;
+
+     line-height:1.25;
+
+     margin-bottom:25px;
+
+     text-shadow:0 0 18px white;
     }
 
     .subtitle{
@@ -824,6 +829,20 @@ body{
         font-size:18px;
         padding:14px 28px;
         margin-top:25px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #moon{
+
+        width:170px;
+        height:170px;
+
+        top:70px;
+        right:20px;
+
     }
 
 }
