@@ -798,3 +798,24 @@ body{
     overscroll-behavior:none;
     touch-action:pan-x;
 }
+
+@media (max-width:768px){
+
+    .hero-content h1{
+        font-size:58px;
+        line-height:1.1;
+    }
+
+    .hero-content h2{
+        font-size:42px;
+    }
+
+    .subtitle{
+        font-size:26px;
+    }
+
+    #enterButton{
+        margin-top:25px;
+    }
+
+}
