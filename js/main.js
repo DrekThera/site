@@ -447,6 +447,18 @@ let currentMemory = 0;
 
 letter.addEventListener("click", () => {
 
+    const finalSection = document.getElementById("finalSection");
+
+ if(window.innerWidth < 768){
+
+    finalSection.style.display = "block";
+
+    finalSection.style.minHeight = "auto";
+
+    finalSection.style.padding = "30px 20px 120px";
+
+ }
+
     letter.style.display = "none";
 
     photo.style.display = "block";
