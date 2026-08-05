@@ -819,9 +819,13 @@ SECTION 2
     }
 
     section{
-        width:100%;
-    }
+    width:100%;
+    overflow:hidden;
+}
 
+ #finalSection{
+    overflow:visible;
+ }
     /* HERO */
 
     #hero,
