@@ -138,6 +138,8 @@ const gardenButton = document.getElementById("gardenButton");
 
 gardenButton.addEventListener("click", () => {
 
+    can.style.display = "flex";
+
     document.getElementById("gardenSection")
 
     .scrollIntoView({
@@ -153,6 +155,8 @@ gardenButton.addEventListener("click", () => {
 // =====================================
 
 const can = document.getElementById("wateringCan");
+
+can.style.display = "none";
 
 can.style.touchAction = "none";
 
