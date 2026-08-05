@@ -645,18 +645,21 @@ SECTION 2
 
 }
 
-#finalSection{
+ #finalSection{
 
-    min-height:100vh;
+    min-height:200vh;
 
     display:flex;
 
-    justify-content:center;
+    justify-content:flex-start;
 
     align-items:center;
 
+    padding-top:40px;
+
     background:#050914;
-}
+
+ }
 
 #letter{
 
