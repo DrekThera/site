@@ -700,3 +700,88 @@ SECTION 2
     display:none;
 
 }
+
+/* ===========================
+   MOBILE FIX
+=========================== */
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+section{
+    width:100%;
+    overflow:hidden;
+}
+
+@media (max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    #hero,
+    #lilySection,
+    #gardenSection,
+    #nextSection,
+    #finalSection{
+        width:100vw;
+        min-height:100vh;
+        overflow:hidden;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #finalSection{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        padding:30px 20px;
+
+    }
+
+    #memoryPhoto{
+
+        width:85%;
+
+        max-width:320px;
+
+        margin:0 auto 30px auto;
+
+        transform:translateX(0) scale(1) !important;
+
+    }
+
+    #memoryText{
+
+        width:100%;
+
+        margin:0;
+
+        text-align:center;
+
+    }
+
+    #memoryText h1{
+
+        font-size:28px;
+
+    }
+
+    #memoryText p{
+
+        font-size:17px;
+
+        line-height:1.7;
+
+    }
+
+}

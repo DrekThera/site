@@ -160,7 +160,7 @@ let offsetX = 0;
 
 let offsetY = 0;
 
-can.addEventListener("mousedown", (e) => {
+can.addEventListener("pointerdown", (e) => {
 
     dragging = true;
 
@@ -172,13 +172,13 @@ can.addEventListener("mousedown", (e) => {
 
 });
 
-document.addEventListener("mouseup", () => {
+document.addEventListener("pointerup", () => {
 
     dragging = false;
 
 });
 
-document.addEventListener("mousemove", (e) => {
+document.addEventListener("pointermove", (e) => {
 
     if (!dragging) return;
 
@@ -448,7 +448,15 @@ letter.addEventListener("click", () => {
     setTimeout(() => {
 
         photo.style.opacity = "1";
-        photo.style.transform = "translateX(-280px) scale(1)";
+        if(window.innerWidth < 768){
+
+     photo.style.transform = "translateX(0) scale(1)";
+
+     }else{
+
+     photo.style.transform = "translateX(-280px) scale(1)";
+
+     }
 
         memoryText.style.opacity = "1";
 
