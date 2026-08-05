@@ -888,3 +888,42 @@ body{
     }
 
 }
+
+@media (max-width:768px){
+
+    .gardenContent{
+        width:94%;
+    }
+
+    .gardenContent h2{
+        font-size:18px;
+        line-height:1.35;
+        margin-bottom:16px;
+    }
+
+    .gardenContent p{
+        font-size:15px;
+        line-height:1.6;
+        margin:12px 0;
+    }
+
+    .plantImage{
+        width:120px;
+    }
+
+    #wateringCanImage{
+        width:90px;
+        height:auto;
+    }
+
+    #waterStatus{
+        font-size:18px;
+        margin-top:15px;
+    }
+
+    #gardenButton{
+        font-size:16px;
+        padding:12px 24px;
+    }
+
+}
