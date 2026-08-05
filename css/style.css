@@ -554,17 +554,23 @@ SECTION 2
 
     #wateringCan{
 
+        position:fixed;
+
+        bottom:80px;
+
+        right:20px;
+
+        left:auto;
+
         top:auto;
 
-        bottom:40px;
+        transform:none;
 
-        left:50%;
+        width:85px;
 
-        transform:translateX(-50%);
+        height:85px;
 
-        width:90px;
-
-        height:90px;
+        z-index:9999;
 
     }
 
