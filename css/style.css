@@ -833,15 +833,23 @@ section{
 
     #finalSection{
 
-        flex-direction:column;
+        display:block;
 
-        justify-content:center;
+        min-height:auto;
 
-        align-items:center;
+        padding:30px 20px 100px;
 
-        padding:30px 20px;
+        overflow:visible;
 
     }
+
+    #memoryText{
+
+    display:block;
+
+    overflow:visible;
+
+ }
 
     #memoryPhoto{
 
