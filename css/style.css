@@ -8,6 +8,13 @@
     box-sizing:border-box;
 }
 
+ html,
+ body{
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+ }
+
 html{
     scroll-behavior:smooth;
 }
@@ -784,4 +791,10 @@ section{
 
     }
 
+}
+
+html,
+body{
+    overscroll-behavior:none;
+    touch-action:pan-x;
 }

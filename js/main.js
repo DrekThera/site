@@ -154,6 +154,8 @@ gardenButton.addEventListener("click", () => {
 
 const can = document.getElementById("wateringCan");
 
+can.style.touchAction = "none";
+
 let dragging = false;
 
 let offsetX = 0;
@@ -161,6 +163,15 @@ let offsetX = 0;
 let offsetY = 0;
 
 can.addEventListener("pointerdown", (e) => {
+
+    can.addEventListener("touchstart", (e)=>{
+    dragging = true;
+
+    const rect = can.getBoundingClientRect();
+
+    offsetX = e.touches[0].clientX - rect.left;
+    offsetY = e.touches[0].clientY - rect.top;
+   });
 
     dragging = true;
 
