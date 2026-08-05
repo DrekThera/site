@@ -374,6 +374,36 @@ SECTION 2
 
 }
 
+@media (max-width:768px){
+
+    .gardenContent{
+
+        width:95%;
+
+    }
+
+    .gardenContent h2{
+
+        font-size:28px;
+
+        line-height:1.3;
+
+        margin-bottom:15px;
+
+    }
+
+    .gardenContent p{
+
+        font-size:16px;
+
+        line-height:1.6;
+
+        margin:12px 0;
+
+    }
+
+}
+
 #seedling{
 
     font-size:90px;
@@ -517,6 +547,26 @@ SECTION 2
     pointer-events:none;
 
     user-select:none;
+
+}
+
+@media (max-width:768px){
+
+    #wateringCan{
+
+        top:auto;
+
+        bottom:40px;
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+        width:90px;
+
+        height:90px;
+
+    }
 
 }
 
