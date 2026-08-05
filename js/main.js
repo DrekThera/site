@@ -475,9 +475,21 @@ letter.addEventListener("click", () => {
 
         memoryText.style.opacity = "1";
 
+        if (window.innerWidth < 768) {
+
+    setTimeout(() => {
+
+        document.getElementById("finalSection").scrollTop = 0;
+
+        window.scrollTo(0, document.getElementById("finalSection").offsetTop);
+
+    },100);
+
+ }
+
     },50);
 
-});
+ });
 
 nextMemoryButton.addEventListener("click", () => {
 
