@@ -787,12 +787,31 @@ section{
     #hero,
     #lilySection,
     #gardenSection,
-    #nextSection,
-    #finalSection{
+    #nextSection{
         width:100vw;
         min-height:100vh;
         overflow:hidden;
     }
+
+    @media (max-width:768px){
+
+    #finalSection{
+
+        width:100vw;
+
+        min-height:100vh;
+
+        overflow-y:auto;
+
+        overflow-x:hidden;
+
+        justify-content:flex-start;
+
+        padding:30px 20px 80px;
+
+    }
+
+}
 
 }
 
@@ -851,7 +870,7 @@ section{
 html,
 body{
     overscroll-behavior:none;
-    touch-action:pan-x;
+    touch-action:auto;
 }
 
 @media (max-width:768px){
