@@ -1,0 +1,702 @@
+/* ===========================
+   WHITE LILY - STYLE V1
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#040814;
+
+    color:white;
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+    overflow:hidden;
+
+}
+
+/* ===========================
+   SKY
+=========================== */
+
+#sky{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-2;
+
+    background:
+    radial-gradient(circle at top,
+    #102040,
+    #040814 70%);
+
+}
+
+/* Hafif karartma */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,.15),
+
+    rgba(0,0,0,.55)
+
+    );
+
+    z-index:-1;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+#hero{
+
+    width:100%;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.hero-content{
+
+    max-width:900px;
+
+}
+
+.subtitle{
+
+    font-size:22px;
+
+    color:#d7d7d7;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content h1{
+
+    font-size:70px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content h2{
+
+    font-size:95px;
+
+    color:white;
+
+    text-shadow:
+
+    0 0 18px white,
+
+    0 0 50px rgba(255,255,255,.8);
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+#enterButton{
+
+    margin-top:60px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:999px;
+
+    padding:
+
+    18px 45px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+}
+
+#enterButton:hover{
+
+    transform:
+
+    scale(1.08);
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+.hero-content h2{
+
+font-size:62px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+}
+
+}
+
+/* ===========================
+   MOON
+=========================== */
+
+#moon{
+
+    position:fixed;
+
+    top:80px;
+
+    right:90px;
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle at 30% 30%,
+    #ffffff,
+    #ececec,
+    #bfbfbf);
+
+    box-shadow:
+
+    0 0 40px rgba(255,255,255,.45),
+
+    0 0 90px rgba(255,255,255,.2);
+
+    z-index:-1;
+
+}
+
+/* =======================
+SECTION 2
+=======================*/
+
+#lilySection{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+
+    #040814,
+
+    #071225
+
+    );
+
+}
+
+.lilyCard{
+
+    width:800px;
+
+    max-width:90%;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    background:
+
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+}
+
+.lilyCard h2{
+
+    font-size:40px;
+
+    margin-bottom:30px;
+
+}
+
+.lilyCard p{
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:#ddd;
+
+}
+
+.lilyCard h1{
+
+    margin-top:35px;
+
+    font-size:65px;
+
+}
+
+/* ===========================
+   GARDEN SECTION
+=========================== */
+
+#gardenSection{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-direction:column;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #ffb347 0%,
+        #ff914d 35%,
+        #ff6b6b 70%,
+        #704264 100%
+    );
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+.gardenContent{
+
+    width:90%;
+    max-width:900px;
+
+}
+
+.gardenContent h2{
+
+    font-size:60px;
+
+    margin-bottom:25px;
+
+    color:white;
+
+}
+
+.gardenContent p{
+
+    font-size:24px;
+
+    color:white;
+
+    margin:18px 0;
+
+}
+
+#seedling{
+
+    font-size:90px;
+
+    margin-top:60px;
+
+    transition:.6s;
+
+}
+
+#wateringCan{
+
+    font-size:90px;
+
+    margin-top:40px;
+
+    cursor:grab;
+
+    user-select:none;
+
+}
+
+#gardenButton{
+
+    margin-top:40px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#gardenButton:hover{
+
+    transform:scale(1.08);
+
+}
+
+#waterStatus{
+
+    margin-top:25px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+/* ===========================
+   WATER DROPS
+=========================== */
+
+#waterDrops{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    pointer-events:none;
+
+}
+
+.drop{
+
+    position:fixed;
+
+    width:8px;
+
+    height:12px;
+
+    background:#5ec8ff;
+
+    border-radius:50%;
+
+    animation:dropFall .7s linear forwards;
+
+}
+
+@keyframes dropFall{
+
+    from{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        opacity:0;
+
+        transform:translateY(70px);
+
+    }
+
+}
+
+#wateringCan{
+
+    position:absolute;
+
+    top:680px;
+
+    left:46%;
+
+    width:130px;
+
+    height:130px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:grab;
+
+    z-index:999;
+
+
+}
+
+#wateringCanImage{
+
+    width:100%;
+
+    pointer-events:none;
+
+    user-select:none;
+
+}
+
+.plantImage{
+
+    width:200px;
+
+    height:auto;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    transition:0.6s ease;
+
+    transform-origin:bottom center;
+
+}
+
+#waterStatus{
+
+    cursor:default;
+
+    transition:.3s;
+
+}
+
+#waterStatus.final{
+
+    cursor:pointer;
+
+    border:2px solid #7dd3fc;
+
+    padding:12px 24px;
+
+    border-radius:15px;
+
+    color:white;
+
+    background:rgba(125,211,252,0.08);
+
+    box-shadow:0 0 15px rgba(125,211,252,0.4);
+
+}
+
+#waterStatus.final:hover{
+
+    transform:scale(1.06);
+
+    box-shadow:0 0 25px rgba(125,211,252,0.8);
+}
+
+#nextSection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    background:#0b1220;
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+#finalSection{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#050914;
+}
+
+#letter{
+
+    font-size:180px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#letter:hover{
+
+    transform:scale(1.08);
+
+}
+
+#memoryPhoto{
+
+    transform:translateX(-280px) scale(.8);
+
+    margin-right:120px;
+
+    width:420px;
+
+    max-width:90%;
+
+    border-radius:20px;
+
+    opacity:0;
+
+    transform:scale(.8);
+
+    transition:all .8s ease;
+
+    display:none;
+
+    box-shadow:0 0 35px rgba(255,255,255,.25);
+
+}
+
+#memoryText{
+
+    width:500px;
+
+    color:white;
+
+    margin-left:-180px;
+
+}
+
+#memoryText h1{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+#memoryText p{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#d9d9d9;
+
+}
+
+#nextMemoryButton{
+
+    margin-top:40px;
+
+    padding:14px 34px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#ffffff;
+
+    color:#111827;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#nextMemoryButton:hover{
+
+    transform:scale(1.08);
+
+}
+
+#memoryPhoto,
+#memoryText{
+
+    opacity:0;
+ transition:.8s;
+
+    display:none;
+
+}
