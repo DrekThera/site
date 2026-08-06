@@ -699,9 +699,9 @@ SECTION 2
 
 #memoryPhoto{
 
-    transform:translateX(-280px) scale(.8);
+    transform:none;
 
-    margin-right:120px;
+    margin-right:20px auto;
 
     width:420px;
 
@@ -723,11 +723,15 @@ SECTION 2
 
 #memoryText{
 
-    width:500px;
+    width:100%;
+
+    max-width:320px;
 
     color:white;
 
-    margin-left:-180px;
+    margin:20px auto;
+
+    text-align:center;
 
 }
 
