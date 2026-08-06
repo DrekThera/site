@@ -811,7 +811,7 @@ SECTION 2
 }
 
     #finalSection{
-    overflow:visible;
+    overflow:auto;
  }
     /* HERO */
 
