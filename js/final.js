@@ -66,8 +66,8 @@ if(currentMemory===memories.length-1){
 
 document.body.innerHTML=`
 <div style="width:100vw;height:100vh;background:#050914;color:white;display:flex;justify-content:center;align-items:center;font-size:30px;text-align:center;padding:30px;">
-Ve son... 🤍<br><br>
-Kapatabilirsin.
+Ve son :) ... <br><br>
+Kapatabilirsin canım sayfayı 🤍
 </div>
 `;
 
