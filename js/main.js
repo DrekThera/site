@@ -533,7 +533,7 @@ nextMemoryButton.addEventListener("click", () => {
     if (window.innerWidth < 768) {
     window.scrollTo({
         top: document.getElementById("finalSection").offsetTop,
-        behavior: "instant"
+        behavior: "auto"
     });
  }
 
