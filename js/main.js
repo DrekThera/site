@@ -544,6 +544,20 @@ nextMemoryButton.addEventListener("click", () => {
 
         photo.src = memories[currentMemory].photo;
 
+        if (currentMemory === 2) {
+
+    photo.style.transform = "translateY(-40px) scale(1.1)";
+
+ } else if (window.innerWidth < 768) {
+
+    photo.style.transform = "translateX(0) scale(1)";
+
+ } else {
+
+    photo.style.transform = "translateX(-180px) scale(1)";
+
+ }
+
         document.querySelector("#memoryText h1").innerHTML =
         memories[currentMemory].title;
 
