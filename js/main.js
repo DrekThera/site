@@ -546,7 +546,7 @@ nextMemoryButton.addEventListener("click", () => {
 
         if (currentMemory === 2) {
 
-    photo.style.transform = "translateY(-40px) scale(1.1)";
+    photo.style.transform = "translateX(0) translateY(-40px) scale(1.1)";
 
  } else if (window.innerWidth < 768) {
 
