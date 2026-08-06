@@ -31,7 +31,7 @@ text:"Belki de ilerde hiç hatırlamayacağın sıradan günlük bir şeydi bu f
 
 {
 photo:"assets/images/foto5.jpg",
-title:"Bu da benim manzaram 😝",
+title:"Bu da benim manzaram 😝😕😱",
 text:"Bak ben dedim romantik değilim diye ama en azından buraya kadar geldin yani. Bu da demek oluyo ki benim için gerçekten değerlisin. İyi ki varsın.🫶"
 }
 
@@ -82,25 +82,32 @@ memoryText.style.opacity = "0";
 
 setTimeout(() => {
 
-    document.querySelector("#memoryText h1").innerHTML =
-    memories[currentMemory].title;
+    // Önce tamamen temizle
+    document.querySelector("#memoryText h1").innerHTML = "";
+    document.querySelector("#memoryText p").innerHTML = "";
+    photo.src = "";
 
-document.querySelector("#memoryText p").innerHTML =
-    memories[currentMemory].text;
+    setTimeout(() => {
 
-photo.src = memories[currentMemory].photo;
+        // Yeni içeriği yükle
+        document.querySelector("#memoryText h1").innerHTML =
+            memories[currentMemory].title;
 
-photo.style.opacity = "1";
-memoryText.style.opacity = "1";
+        document.querySelector("#memoryText p").innerHTML =
+            memories[currentMemory].text;
 
-if(currentMemory===memories.length-1){
+        photo.src = memories[currentMemory].photo;
 
-nextMemoryButton.innerHTML="Kapat 🤍";
+        photo.style.opacity = "1";
+        memoryText.style.opacity = "1";
 
-}
+        if (currentMemory === memories.length - 1) {
+            nextMemoryButton.innerHTML = "Kapat 🤍";
+        }
 
-},450);
+    }, 150);
 
+}, 450);
 });
 
 const finalMusic = document.getElementById("finalMusic");
