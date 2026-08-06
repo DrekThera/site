@@ -481,7 +481,7 @@ letter.addEventListener("click", () => {
 
      }else{
 
-     photo.style.transform = "translateX(-280px) scale(1)";
+     photo.style.transform = "translateX(-180px) scale(1)";
 
      }
 
