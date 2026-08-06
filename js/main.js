@@ -530,6 +530,13 @@ nextMemoryButton.addEventListener("click", () => {
  }
     currentMemory++;
 
+    if (window.innerWidth < 768) {
+    window.scrollTo({
+        top: document.getElementById("finalSection").offsetTop,
+        behavior: "instant"
+    });
+ }
+
     photo.style.opacity = "0";
     memoryText.style.opacity = "0";
 
