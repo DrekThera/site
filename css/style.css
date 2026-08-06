@@ -1023,3 +1023,14 @@ SECTION 2
 
 }
 
+#finalSection{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#finalSection > img,
+#finalSection > #memoryText{
+    position:relative;
+}
+
