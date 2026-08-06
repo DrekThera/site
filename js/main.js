@@ -559,7 +559,7 @@ nextMemoryButton.addEventListener("click", () => {
 
      }
 
-    },500);
+    },1000);
 
 });
 
