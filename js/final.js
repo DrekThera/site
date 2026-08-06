@@ -77,18 +77,25 @@ return;
 
 currentMemory++;
 
-photo.style.opacity="0";
-memoryText.style.opacity="0";
+photo.style.opacity = "0";
+memoryText.style.opacity = "0";
 
-setTimeout(()=>{
+// Eski yazıyı tamamen temizle
+document.querySelector("#memoryText h1").innerHTML = "";
+document.querySelector("#memoryText p").innerHTML = "";
 
-photo.src=memories[currentMemory].photo;
+setTimeout(() => {
 
-document.querySelector("#memoryText h1").innerHTML=memories[currentMemory].title;
-document.querySelector("#memoryText p").innerHTML=memories[currentMemory].text;
+    photo.src = memories[currentMemory].photo;
 
-photo.style.opacity="1";
-memoryText.style.opacity="1";
+    document.querySelector("#memoryText h1").innerHTML =
+        memories[currentMemory].title;
+
+    document.querySelector("#memoryText p").innerHTML =
+        memories[currentMemory].text;
+
+    photo.style.opacity = "1";
+    memoryText.style.opacity = "1";
 
 if(currentMemory===memories.length-1){
 
