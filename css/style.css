@@ -25,12 +25,8 @@ body{
 
     color:white;
 
-    font-family:
-    "Segoe UI",
-    Arial,
-    sans-serif;
-
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
 
 }
 
@@ -952,15 +948,13 @@ SECTION 2
     #nextSection,
     #finalSection{
 
-        border:5px solid red !important;
+        
 
         display:block;
 
         min-height:auto;
 
-        overflow-y:auto;
-
-        overflow-x:hidden;
+        overflow:visible;
 
         padding:30px 20px 100px;
 
