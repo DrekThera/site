@@ -390,18 +390,11 @@ function splashWater(){
         
        waterStatus.addEventListener("click", () => {
 
-    // Sadece son aşamada tıklanabilir olsun
     if (growLevel !== 5) return;
 
-    can.style.display = "none";
+    window.location.href = "final.html";
 
-    document
-        .getElementById("finalSection")
-        .scrollIntoView({
-            behavior: "smooth"
-        });
-
-});
+ });
 
 const letter = document.getElementById("letter");
 const photo = document.getElementById("memoryPhoto");
