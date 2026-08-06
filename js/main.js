@@ -507,11 +507,27 @@ nextMemoryButton.addEventListener("click", () => {
 
     if (currentMemory === memories.length - 1) {
 
-    window.close();
+    document.body.innerHTML = `
+        <div style="
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#050914;
+            color:white;
+            font-size:32px;
+            text-align:center;
+            padding:30px;
+        ">
+             Ve son :) ...
+            <br><br>
+            Kapatabilirsin canım sayfayı.🤍
+        </div>
+    `;
 
     return;
-
-  }
+ }
     currentMemory++;
 
     photo.style.opacity = "0";

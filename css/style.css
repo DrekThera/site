@@ -26,7 +26,7 @@ body{
     color:white;
 
     overflow-x:hidden;
-    overflow-y:auto;
+    overflow-y:hidden;
 
 }
 
@@ -643,15 +643,15 @@ SECTION 2
 
  #finalSection{
 
-    min-height:200vh;
+    min-height:100vh;
 
     display:flex;
 
-    justify-content:flex-start;
+    justify-content:center;
 
     align-items:center;
 
-    padding-top:40px;
+    overflow:hidden;
 
     background:#050914;
 
@@ -671,17 +671,11 @@ SECTION 2
 
     #letter{
 
-        display:flex;
-
-        justify-content:center;
-
-        align-items:center;
-
         width:100%;
-
-        margin:80px auto;
-
-        text-align:center;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     margin:60px auto;
 
     }
 
@@ -719,16 +713,9 @@ SECTION 2
 
 #memoryText{
 
-    width:100%;
-
-    max-width:320px;
-
+    width:420px;
     color:white;
-
-    margin:20px auto;
-
     text-align:center;
-
 }
 
  @media (max-width:768px){
@@ -823,7 +810,7 @@ SECTION 2
     overflow:hidden;
 }
 
- #finalSection{
+    #finalSection{
     overflow:visible;
  }
     /* HERO */
@@ -952,7 +939,7 @@ SECTION 2
 
         display:block;
 
-        min-height:auto;
+        min-height:100vh;
 
         overflow:visible;
 
@@ -976,19 +963,18 @@ SECTION 2
 
         display:block;
 
-        position:relative;
+     position:relative;
 
-        width:90%;
+     width:90%;
 
-        max-width:320px;
+     max-width:320px;
 
-        margin:20px auto;
+     margin:20px auto;
 
-        left:auto;
+     left:0;
+     right:0;
 
-        top:auto;
-
-        transform:none !important;
+     transform:none !important;
 
     }
 
@@ -1019,6 +1005,21 @@ SECTION 2
         line-height:1.8;
 
     }
+
+}
+
+#memoryContainer{
+
+    width:100%;
+    max-width:1400px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:60px;
+
+    margin:0 auto;
 
 }
 
