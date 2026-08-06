@@ -643,7 +643,7 @@ SECTION 2
 
  #finalSection{
 
-    min-height:100dvh;
+    min-height:100vh;
 
     display:flex;
 
@@ -654,6 +654,13 @@ SECTION 2
     overflow:hidden;
 
     background:#050914;
+
+    position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100dvh;
+ z-index: 99999;
 
  }
 
