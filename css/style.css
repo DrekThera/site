@@ -948,6 +948,8 @@ SECTION 2
     #nextSection,
     #finalSection{
 
+        border:5px solid red !important;
+
         display:block;
 
         min-height:auto;
