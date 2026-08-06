@@ -486,7 +486,6 @@ letter.addEventListener("click", () => {
      }
 
         memoryText.style.opacity = "1";
-        nextMemoryButton.disabled = false;
 
         if (window.innerWidth < 768) {
 
@@ -540,7 +539,6 @@ nextMemoryButton.addEventListener("click", () => {
 
     photo.style.opacity = "0";
     memoryText.style.opacity = "0";
-    nextMemoryButton.disabled = true;
 
     setTimeout(() => {
 
