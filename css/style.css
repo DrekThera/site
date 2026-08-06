@@ -811,7 +811,7 @@ SECTION 2
 }
 
     #finalSection{
-    overflow:auto;
+    overflow:visible;
  }
     /* HERO */
 
@@ -939,7 +939,7 @@ SECTION 2
 
         display:block;
 
-        min-height:100vh;
+        min-height:150vh;
 
         overflow:visible;
 
