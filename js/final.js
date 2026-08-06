@@ -8,31 +8,31 @@ const memories = [
 {
 photo:"assets/images/foto1.jpg",
 title:"🤍 Beyaz Zambağın Anlamı",
-text:"Beyaz zambak; saflığın, masumiyetin ve zerafetin simgelerinden biridir. Zaten demiştim sana çok naif sakin birisin diye. Tabi sinir olursan sakin kısmı yalan oluyo ama 😝😝😝. Olsun nolcakk"
+text:"Beyaz zambak; saflığın, masumiyetin ve zerafetin simgelerinden biridir. Zaten demiştim sana çok naif sakin birisin diye. Tabi sinir olursan sakin kısmı yalan oluyo ama 😝😝😝. Olsun nolcakk "
 },
 
 {
 photo:"assets/images/foto2.jpg",
 title:"🤍 Minik Detaylar, Kocaman Bir Güzellik",
-text:"Tırnaklarını özenle yapmak, renk seçerken heyecanlanmak falan oje arıyosun vs. Bunlar da içindeki o eğlenceli tarafını hatırlatıyor. Ve bence seni güzel yapan şeylerden biri de içindekileri yapmacık olmadan dışına vurman."
+text:"Tırnaklarını özenle yapmak, renk seçerken heyecanlanmak falan oje arıyosun vs. Bunlar da içindeki o eğlenceli tarafını hatırlatıyor. Ve bence seni güzel yapan şeylerden biri de içindekileri yapmacık olmadan dışına vurman ki zaten söylemişimdir mıy mıy kasıntı insanlardan nefret ederim abi. Demiştim ya (sana baktığımda çocukluğunu görüyorum). Çok hoş bence böyle olman.🥱😉😉 "
 },
 
 {
 photo:"assets/images/foto3.jpg",
 title:"Kedi İnsanı 😸",
-text:"Zaten kedileri seviyorum biliyosun bununla ilgili yazıcak bir şey bulamadım ama en azından senden bir şeylerin de burda olması iyi olur."
+text:"Zaten kedileri seviyorum biliyosun bununla ilgili yazıcak bir şey bulamadım ama en azından seninle ilgili bir şey de burda olsun. Olmasın mıı??"
 },
 
 {
 photo:"assets/images/foto4.jpg",
 title:"Bu senin manzaran 🏞️",
-text:"Belki de ilerde hiç hatırlamayacağın sıradan günlük bir şeydi bu fotoğraf."
+text:"Belki de ilerde hiç hatırlamayacağın sıradan günlük bir şeydi bu fotoğraf ama sana o an güzel geldiği için çekmişsin ve yahut paylaşmak için estetik açıdan fena olmayan bir şey, detaylara önem veriyosun, işte bravo beğendim. "
 },
 
 {
 photo:"assets/images/foto5.jpg",
 title:"Bu da benim manzaram 😝",
-text:"Bak ben dedim ama romantik değilim diye ama en azından buraya kadar geldin. İyi ki varsın. 🫶"
+text:"Bak ben dedim romantik değilim diye ama en azından buraya kadar geldin yani. Bu da demek oluyo ki benim için gerçekten değerlisin. İyi ki varsın.🫶"
 }
 
 ];
@@ -80,22 +80,18 @@ currentMemory++;
 photo.style.opacity = "0";
 memoryText.style.opacity = "0";
 
-// Eski yazıyı tamamen temizle
-document.querySelector("#memoryText h1").innerHTML = "";
-document.querySelector("#memoryText p").innerHTML = "";
-
 setTimeout(() => {
 
-    photo.src = memories[currentMemory].photo;
-
     document.querySelector("#memoryText h1").innerHTML =
-        memories[currentMemory].title;
+    memories[currentMemory].title;
 
-    document.querySelector("#memoryText p").innerHTML =
-        memories[currentMemory].text;
+document.querySelector("#memoryText p").innerHTML =
+    memories[currentMemory].text;
 
-    photo.style.opacity = "1";
-    memoryText.style.opacity = "1";
+photo.src = memories[currentMemory].photo;
+
+photo.style.opacity = "1";
+memoryText.style.opacity = "1";
 
 if(currentMemory===memories.length-1){
 
@@ -103,6 +99,6 @@ nextMemoryButton.innerHTML="Kapat 🤍";
 
 }
 
-},300);
+},450);
 
 });
