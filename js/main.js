@@ -493,7 +493,7 @@ letter.addEventListener("click", () => {
 
         document.getElementById("finalSection").scrollTop = 0;
 
-        window.scrollTo(0, document.getElementById("finalSection").offsetTop);
+        //window.scrollTo(0, document.getElementById("finalSection").offsetTop);
 
     },100);
 
@@ -531,10 +531,10 @@ nextMemoryButton.addEventListener("click", () => {
     currentMemory++;
 
     if (window.innerWidth < 768) {
-    window.scrollTo({
-        top: document.getElementById("finalSection").offsetTop,
-        behavior: "auto"
-    });
+    //window.scrollTo({
+     //   top: document.getElementById("finalSection").offsetTop,
+     //   behavior: "auto"
+    //});
  }
 
     photo.style.opacity = "0";
