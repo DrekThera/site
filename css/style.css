@@ -760,7 +760,7 @@ SECTION 2
 
     margin-top:40px;
 
-    padding:14px 34px;
+    padding:10px 24px;
 
     border:none;
 
@@ -770,7 +770,7 @@ SECTION 2
 
     color:#111827;
 
-    font-size:18px;
+    font-size:16px;
 
     cursor:pointer;
 
@@ -965,9 +965,9 @@ SECTION 2
 
      position:relative;
 
-     width:90%;
+     width:80%;
 
-     max-width:320px;
+     max-width:260px;
 
      margin:20px auto;
 
@@ -992,7 +992,7 @@ SECTION 2
 
     #memoryText h1{
 
-        font-size:24px;
+        font-size:18px;
 
         margin-bottom:15px;
 
@@ -1000,9 +1000,9 @@ SECTION 2
 
     #memoryText p{
 
-        font-size:16px;
+        font-size:14px;
 
-        line-height:1.8;
+        line-height:1.5;
 
     }
 
