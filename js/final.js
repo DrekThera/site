@@ -13,7 +13,7 @@ text:"Beyaz zambak; saflığın, masumiyetin ve zerafetin simgelerinden biridir.
 
 {
 photo:"assets/images/foto2.jpg",
-title:"🤍 Minik Detaylar, Kocaman Bir Güzellik",
+title:"Minik Detaylar, Kocaman Bir Güzellik",
 text:"Tırnaklarını özenle yapmak, renk seçerken heyecanlanmak falan oje arıyosun vs. Bunlar da içindeki o eğlenceli tarafını hatırlatıyor. Ve bence seni güzel yapan şeylerden biri de içindekileri yapmacık olmadan dışına vurman ki zaten söylemişimdir mıy mıy kasıntı insanlardan nefret ederim abi. Demiştim ya (sana baktığımda çocukluğunu görüyorum). Çok hoş bence böyle olman.🥱😉😉 "
 },
 
@@ -105,6 +105,25 @@ nextMemoryButton.innerHTML="Kapat 🤍";
 
 const finalMusic = document.getElementById("finalMusic");
 
-document.addEventListener("click", () => {
-    finalMusic.play();
-}, { once: true });
+letter.addEventListener("click", () => {
+
+    finalMusic.play().catch(() => {});
+
+    letter.style.display = "none";
+
+    photo.style.display = "block";
+    memoryText.style.display = "block";
+
+    photo.src = memories[0].photo;
+
+    document.querySelector("#memoryText h1").innerHTML = memories[0].title;
+    document.querySelector("#memoryText p").innerHTML = memories[0].text;
+
+    setTimeout(() => {
+
+        photo.style.opacity = "1";
+        memoryText.style.opacity = "1";
+
+    }, 100);
+
+});
