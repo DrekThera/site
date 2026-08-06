@@ -1023,6 +1023,16 @@ SECTION 2
 
 }
 
+@media (max-width:768px){
+
+    #memoryContainer{
+
+        display:block;
+
+    }
+
+}
+
 #finalSection{
     display:flex;
     justify-content:center;
