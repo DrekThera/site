@@ -689,6 +689,8 @@ SECTION 2
 
 #memoryPhoto{
 
+    transform: translateY(-20px) !important;
+
     transform:none;
 
     margin-right:20px auto;
