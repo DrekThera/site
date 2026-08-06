@@ -102,3 +102,9 @@ nextMemoryButton.innerHTML="Kapat 🤍";
 },450);
 
 });
+
+const finalMusic = document.getElementById("finalMusic");
+
+document.addEventListener("click", () => {
+    finalMusic.play();
+}, { once: true });
